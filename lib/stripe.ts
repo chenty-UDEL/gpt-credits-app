@@ -1,5 +1,6 @@
 import Stripe from 'stripe'
 
+// Initialize Stripe client without explicit API version (uses default)
 export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!)
 
 // Credit packages configuration (USD)
